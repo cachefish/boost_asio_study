@@ -3,7 +3,7 @@
 #include<boost/asio/steady_timer.hpp>
 using  std::cout;
 using std::endl;
-
+//回调
 void callback(const boost::system::error_code&){
     cout<<"hello world"<<endl;
 }
@@ -18,7 +18,7 @@ int main()
     
     boost::asio::io_service io;
     //注册事件
-    boost::asio::deadline_timer t1(io,boost::posix_time::seconds(5));
+    boost::asio::deadline_timer  t1(io,boost::posix_time::seconds(5));
     t1.async_wait(callback);   //非阻塞等待
 
     //注册第二个事件
