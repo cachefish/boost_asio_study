@@ -18,7 +18,6 @@ public:
     {   
         do_connect(endpoint_iterator);
     }
-
     void write(const chat_message&msg ){
             io_service_.post([this,msg](){
                 bool write_in_progress = !write_msgs_.empty();

@@ -1,6 +1,5 @@
 #ifndef CHAT_MESSAGE_H
 #define CHAT_MESSAGE_H
-
 #include"structHeader.h"
 
 #include<iostream>
